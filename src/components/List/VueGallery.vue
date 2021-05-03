@@ -29,7 +29,7 @@
 
 <script>
 export default {
-  name: 'YoubinGallery',
+  name: 'VueGallery',
   props: {
     items: {
       type: Array

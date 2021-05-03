@@ -18,21 +18,21 @@
       <!-- 
         6. 자식 컴포넌트에서 받은 input이벤트를 @input으로 받아 modalData와 함께 $emit으로 부모에게 한번 더 전달해준다.
       -->
-      <youbin-gallery 
+      <vue-gallery 
         v-if="type === 'gallery'"
         :items="items"
         v-model="modalData"
         @input="$emit('input', modalData)"
         @click="$emit('click')" />
 
-      <youbin-table
+      <vue-table
         v-else-if="type === 'table'"
         :items="items"
         v-model="modalData"
         @input="$emit('input', modalData)"
         @click="$emit('click')" />
 
-      <youbin-webzine
+      <vue-webzine
         v-else-if="type === 'webzine'"
         :items="items"
         v-model="modalData"
@@ -43,13 +43,13 @@
 </template>
 
 <script>
-import YoubinGallery from '@/components/YoubinList/YoubinGallery.vue'
-import YoubinTable from '@/components/YoubinList/YoubinTable.vue'
-import YoubinWebzine from '@/components/YoubinList/YoubinWebzine.vue'
+import VueGallery from '@/components/List/VueGallery.vue'
+import VueTable from '@/components/List/VueTable.vue'
+import VueWebzine from '@/components/List/VueWebzine.vue'
 
 export default {
-  components: { YoubinGallery, YoubinTable, YoubinWebzine },
-  name: 'YoubinList',
+  components: { VueGallery, VueTable, VueWebzine },
+  name: 'List',
   props: {   
     type: {
       type: String,

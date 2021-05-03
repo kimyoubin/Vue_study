@@ -27,7 +27,7 @@
 
 <script>
 export default {
-  name: 'YoubinWebzine',
+  name: 'VueWebzine',
   props: {
     items: {
       type: Array

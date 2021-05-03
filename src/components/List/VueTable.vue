@@ -35,7 +35,7 @@
 
 <script>
 export default {
-  name: 'YoubinTable',
+  name: 'VueTable',
   props: {
     items: {
       type: Array

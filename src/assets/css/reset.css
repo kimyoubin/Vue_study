@@ -1,0 +1,45 @@
+@charset "utf-8";
+/* reset */
+body { background-color: #ebebeb;}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,hr,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,span,strike,strong,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;}
+h1,h2,h3,h4,h5,h6{font-weight:normal}
+body,input,button,select,textarea,label{font-size:16px;color:#000;font-family:'Kakao','맑은 고딕','MalgunGothic','돋움','dotum','굴림','gulim',arial,tahoma,verdana,'Apple Gothic',sans-serif;font-weight:400;line-height:1;letter-spacing:-.4px;word-break: keep-all;}
+fieldset,img{border:0 none;vertical-align:top}
+dl,ul,ol,menu,li{list-style:none}
+a{color:inherit;}
+a,a:link,a:visited,a:hover,a:active,a:focus{text-decoration:none;}
+input,button,select,textarea,label{vertical-align:middle;border:none;background:none;cursor:pointer}
+textarea,select,input{appearance:none;-moz-appearance:none;-webkit-appearance:none;border-radius:0;margin:0;padding:0;border:0}
+table{border-collapse:collapse;border-spacing:0}
+table,th,td{border:none}
+sup { display: inline-block; vertical-align: 2px;}
+*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;/*outline:none*/}
+*::before,*::after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+/* HTML5 reset */
+article,aside,details,figcaption,figure,footer,header,menu,nav,section,video{display:block}
+address,caption,em,i{font-style:normal;font-weight:normal}
+iframe,embed,object{max-width:100%}
+/* clear */
+.clearfix::after{content:"";display:block;clear:both}
+/* hidden */
+.hide{display:block;overflow:hidden;position:absolute;left:-9999px;width:1px;height:1px;font-size:0;line-height:0;text-indent:-9999px}
+/* mobile */
+body{-webkit-text-size-adjust:none;-moz-text-size-adjust:none;-ms-text-size-adjust:none}
+
+#skipnavi a {position:absolute;left:-3000%;}
+#skipnavi a:focus {display:block;left:0;top:0;z-index:10000000000;width:100%;line-height:60px;background:#fff;border-bottom: 1px solid #d8d8d8;color:#000;font-family:'LGL';text-align:center;outline: none;}
+
+div:focus,
+button:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+textarea:focus,
+select:focus,
+input[type="text"]:hover,
+input[type="password"]:hover,
+textarea:hover{outline:none}
+input[type=text]::-ms-clear {display:none;}
+select::-ms-expand {display:none}
+
+input[type=password] {font-family: arial,tahoma,verdana,'Apple Gothic',sans-serif;}

@@ -14,7 +14,7 @@
 
 <script>
 export default {
-  name: 'YoubinModal',  
+  name: 'Modal',  
   props: {    
     items: {
       type: Array
