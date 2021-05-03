@@ -11,8 +11,8 @@ import VueHeader from "@/layouts/Header.vue";
 import VueFooter from "@/layouts/Footer.vue";
 
 export default {
-    name: 'Indet',
-    components: {VueHeader, VueFooter}
+    name: 'Index',
+    components: {VueHeader, VueFooter},    
 }
 </script>
 

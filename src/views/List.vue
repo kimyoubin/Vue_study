@@ -118,7 +118,7 @@ export default {
   methods: {
     changeList: function (type) {
       // 버튼을 클릭할때마다 string값을 넘겨준다.
-      console.log('type ::', type);
+      // console.log('type ::', type);
       this.listType = type
     },
     modalClose: function () {

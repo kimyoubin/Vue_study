@@ -42,7 +42,7 @@ export default {
     },
   },
   created() {
-    console.log('Gallery component');
+    // console.log('Gallery component');
   },
 }
 </script>

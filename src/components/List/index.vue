@@ -67,7 +67,7 @@ export default {
     
   },
   mounted() {
-    console.log('modalData :: ',this.modalData);
+    // console.log('modalData :: ',this.modalData);
   }
 }
 </script>

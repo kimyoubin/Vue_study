@@ -42,7 +42,7 @@ export default {
     }
   },
   created() {
-    console.log('Table component');
+    // console.log('Table component');
   },
 }
 </script>

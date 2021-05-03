@@ -40,7 +40,7 @@ export default {
     },
   },
   created() {
-    console.log('Webzine component');
+    // console.log('Webzine component');
   },
   methods: {
   }
