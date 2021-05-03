@@ -1,6 +1,6 @@
 <template>
   <vue-layout>
-    <div class="list">
+    <div class="wrap">
         <!-- 
           3. button을 클릭할때마다 changeList()가 string값을 인자값으로 넘겨준다.
           여기서 listType을 자식컴포넌트인 YoubinList/index.vue에게 :type이라는 이름으로 바인딩해준다.
@@ -138,9 +138,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.list {
+.wrap {
   max-width: 720px;
-  margin: 50px auto 0;
+  margin: 0 auto;
+  padding: 70px 0;
 }
 .index {
   padding: 30px;

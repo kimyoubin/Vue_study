@@ -54,22 +54,19 @@ table {
   font-size: 13px;
   text-align: center;
   border-collapse: collapse;
-  border-top: 1px solid #b4b4b4;
-  border-left: 1px solid #b4b4b4;
   th, td {
     height: 60px;
-    border-right: 1px solid #b4b4b4; 
-    border-bottom: 1px solid #b4b4b4; 
   }
   th {
     background-color: #f3f3f3;
   }
   tr {
     background-color: #fff;
+    border-bottom: 1px solid #ddd;
     transition: all .4s;
     cursor: pointer;
     &:hover {
-      background-color: #f3f3f3;
+      background-color: #ededed;
     }
   }
 }

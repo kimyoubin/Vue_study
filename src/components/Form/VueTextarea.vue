@@ -1,20 +1,30 @@
 <template>
 	<textarea 
-        :name="name" 
-        :id="id"
         :value="value"
-        @input="change">
+		:placeholder="placeholder"
+		@click="isActive = true"
+		@blur="isActive = false"
+        @input="change"
+		:class="{ 'on' : isActive }">
     </textarea>
 </template>
 
 <script>
 export default {
 	name: 'VueTextarea',
-	props: [
-        'name', 'id', 'value'
-	],
+	props: {	
+		placeholder: {
+			type: String,
+			default: ''
+		},	
+		value: {
+			type: String,
+			default: ''
+		},	
+	},
 	data() {
 		return {
+			isActive: false,
 		}
 	},
 	methods: {
@@ -25,22 +35,24 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 textarea {
 	width: 100%;
 	height: 150px;
 	padding: 10px;
 	margin-bottom: 15px;
-	font-size: 18px;
+	font-size: 14px;
 	color: #333;
-	border: 1px solid #8e8e8e;
+	background: #fff;
     resize: none;
+	&.on {
+		border: 1px solid rgb(228, 228, 228);
+		box-shadow: 0 10px 10px rgba(0,0,0,.05);
+	}
+	&::placeholder{
+		font-size: 14px;
+		color: #ddd;
+	}	
 }
-
-textarea::placeholder {
-	font-size: 16px;
-	color: #8e8e8e;
-}
-
 
 </style>

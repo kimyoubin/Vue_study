@@ -56,7 +56,6 @@ ul {
     height: 150px;
     margin-bottom: 30px;
     background-color: #fff;
-    border: 1px solid #ddd;
     overflow: hidden;
     cursor: pointer;
     transition: all .5s;

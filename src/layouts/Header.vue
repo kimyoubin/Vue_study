@@ -1,14 +1,12 @@
 <template>
     <header>
-        <div class="wrap">
+        <div>
             <router-link 
                 v-for="(item, key) in route"
                 :key="key"
                 :to="item.path"
                 :class="{ 'on' : item.path === $route.path }"
                 @click="$emit('click', key)">{{ item.menu }}</router-link>
-            <!-- <router-link to="/about">ABOUT</router-link>
-            <router-link to="/list">LIST</router-link> -->
         </div>
     </header>
 </template>
@@ -37,10 +35,11 @@ export default {
 }
 </script>
 
-<style lang="scss" scope>
+<style lang="scss" scoped>
 header {
     background: #fff;
-    .wrap {
+    border-bottom: 1px solid #ddd;
+    > div {
         width: 720px;
         margin: 0 auto;
         display: flex;
@@ -55,7 +54,7 @@ header {
             font-size: 17px;
             font-weight: bold;
             &.on {
-                color: red;
+                border-bottom: 2px solid #000;
             }
         }
     }

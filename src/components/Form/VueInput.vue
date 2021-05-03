@@ -2,8 +2,6 @@
 	<input 				
 		:type="type"
 		:placeholder="placeholder"
-		:name="name"
-		:id="id"
 		:value="value"
 		@click="isActive = true"
 		@blur="isActive = false"
@@ -14,10 +12,20 @@
 <script>
 export default {
 	name: 'VueInput',
-	props: [
-		// 부모에서 v-model로 던진값을 value로 받음
-		'type', 'placeholder', 'name', 'id', 'value', 'checked'
-	],
+	props: {
+		type: {
+			type: String,
+			default: ''
+		},	
+		placeholder: {
+			type: String,
+			default: ''
+		},	
+		value: {
+			type: String,
+			default: ''
+		},	
+	},
 	data() {
 		return {
 			isActive: false,
@@ -33,26 +41,25 @@ export default {
 }
 </script>
 
-<style scoped>
-
+<style lang="scss" scoped>
 input {
 	width: 100%;
 	height: 50px;
 	padding: 10px;
-	margin-bottom: 15px;
-	font-size: 18px;
+	font-size: 14px;
 	color: #333;
-	border: 1px solid #8e8e8e;
+	background-color: #fff;
+	&.on {
+		border: 1px solid rgb(228, 228, 228);
+		box-shadow: 0 10px 10px rgba(0,0,0,.05);
+	}
 }
 
-input::placeholder {
-	font-size: 16px;
-	color: #8e8e8e;
-}
-
-input.on {
-	border: 1px solid #001ad7;
-	transition: all .3s;
+input {
+	&::placeholder{
+		font-size: 14px;
+		color: #ddd;
+	}
 }
 
 </style>

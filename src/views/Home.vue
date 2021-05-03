@@ -1,6 +1,6 @@
 <template>
   <vue-layout>
-    <div class="home">
+    <div class="wrap">
       Home
     </div>
   </vue-layout>
@@ -14,3 +14,12 @@ export default {
   components: { VueLayout },
 }
 </script>
+
+<style lang="scss" scoped>
+.wrap {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 70px 0;
+}
+
+</style>
