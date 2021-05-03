@@ -2,11 +2,11 @@
   <table>
     <thead>
       <tr>
-        <th>번호</th>
-        <th>제목</th>
-        <th>글쓴이</th>
-        <th>날짜</th>
-        <th>조회수</th>
+        <th>number</th>
+        <th>title</th>
+        <th>writer</th>
+        <th>date</th>
+        <th>view</th>
       </tr>
     </thead>
     <tbody>
@@ -51,13 +51,13 @@ export default {
 
 table {
   width: 100%;
-  font-size: 14px;
+  font-size: 13px;
   text-align: center;
   border-collapse: collapse;
   border-top: 1px solid #b4b4b4;
   border-left: 1px solid #b4b4b4;
   th, td {
-    height: 70px;
+    height: 60px;
     border-right: 1px solid #b4b4b4; 
     border-bottom: 1px solid #b4b4b4; 
   }

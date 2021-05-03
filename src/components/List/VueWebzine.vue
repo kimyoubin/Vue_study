@@ -52,7 +52,7 @@ ul {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  font-size: 14px;
+  font-size: 13px;
   li {
     position: relative;
     width: 48%;
@@ -66,7 +66,7 @@ ul {
       position: absolute;
       width: 100%;
       height: 35%;
-      background: linear-gradient(0, rgba(0, 0, 0, 0), rgba(0, 0, 0, .5));
+      background: linear-gradient(0, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5));
     }
     &:hover {
       &::after {
@@ -79,7 +79,7 @@ ul {
         left: 0;
         width: 100%;
         height: 100%;
-        border: 4px solid #199fff;
+        border: 4px solid #ffbb5e;
         
       }
     }
@@ -95,14 +95,13 @@ dl {
   position: absolute;
   top: 20px;
   left: 20px;
-  color: #fff;
   dt { 
     margin-bottom: 10px;
-    font-size: 20px; 
+    font-size: 14px; 
     font-weight: bold;
   }
   dd {
-    font-size: 15px;
+    font-size: 13px;
     &.date {
       margin-bottom: 5px;
     }

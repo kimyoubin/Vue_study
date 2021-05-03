@@ -55,25 +55,12 @@ export default {
       position: absolute;
       top: 20px;
       right: 20px;
-      width: 25px;
-      height: 24px;
-      background: url('~@/assets/images/close_btn.png');
+      width: 18px;
+      height: 18px;
+      background: url('~@/assets/images/close_btn.png') no-repeat;
       background-size: 100%;
       font-size: 0;
     }
-    dl {
-      margin-bottom: 30px;
-      dt {
-        margin-bottom: 10px;
-        font-size: 20px;
-        font-weight: bold;
-      }
-      dd {
-        margin-bottom: 10px;
-        font-size: 14px;
-      }
-    }
-
   }
 }
 

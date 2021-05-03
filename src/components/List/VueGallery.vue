@@ -21,7 +21,7 @@
       <dl>
         <dt>{{ item.title }}</dt>
         <dd class="date">{{ item.date }}</dd>
-        <dd class="views">조회수 : {{ item.views }}</dd>
+        <dd class="views">view : {{ item.views }}</dd>
       </dl>
     </li>
   </ul>
@@ -53,7 +53,7 @@ ul {
   li {
     position: relative;
     display: flex;
-    height: 200px;
+    height: 150px;
     margin-bottom: 30px;
     background-color: #fff;
     border: 1px solid #ddd;
@@ -73,13 +73,13 @@ ul {
       width: 30px;
       height: 30px;
       color: #fff;
-      font-size: 15px;
+      font-size: 13px;
       font-weight: bold;
       background-color: #f5c53b;
       z-index: 1;
     }
     .img-area { 
-      width: 200px;
+      width: 375px;
       height: 100%;
       background-size: cover;
       background-position: center;
@@ -98,10 +98,11 @@ dl {
   padding: 20px;
   dt { 
     margin-bottom: 10px;
-    font-size: 20px; 
+    font-size: 16px; 
     font-weight: bold;
   }
   dd {
+    font-size: 13px;
     &.date {
       margin-bottom: 20px;
     }
